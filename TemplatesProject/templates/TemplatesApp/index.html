@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+    {% extends "TemplatesApp/base.html" %}
+        {%block body_block%}
+            {% load myExtras %}
+            <h1>Welcome to Home</h1>
+            <h1>{{ text|cut:'world' }}</h1>
+            <h2>{{ number|add:"99" }}</h2>
+        {% endblock %}
+<!--<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Welcome to Home</h1>
+</body>
+</html>-->
